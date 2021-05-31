@@ -33,7 +33,7 @@ class App extends React.Component {
         this.setState(prevState => ({
           timer: prevState.timer - 1,
         }), () => {
-          if (this.state.timer === 50) {
+          if (this.state.timer === 0) {
             clearInterval(this.interval);
             this.setState({
               started: false,
@@ -87,7 +87,7 @@ class App extends React.Component {
             <div className="card-body">
               
               {
-                this.state.timer > 50 ?
+                this.state.timer > 0 ?
                   <div style={{textAlign: "center", fontSize:"20px"}}>Time <h1>00:{this.state.timer}</h1> </div>
                 :
                 <React.Fragment>
