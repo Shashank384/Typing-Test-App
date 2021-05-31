@@ -7,8 +7,9 @@ function CalAccuracy({correctCharCount, time}) {
         return (
             <div style={{fontSize: "30px", textAlign: "center"}}>{grossWPM} WPM</div>
         )
-    }    
-    return null;
+    } 
+    
+    return <div style={{fontSize: "30px", textAlign: "center"}}>0 WPM</div>;
 }
 
 export default CalAccuracy

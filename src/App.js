@@ -83,19 +83,10 @@ class App extends React.Component {
 
           <div className="col-sm-3">
             <div className="card" style={{width: "12rem", backgroundColor: "#007ff7", color: "white"}}>
-            
             <div className="card-body">
-              
-              {
-                this.state.timer > 0 ?
-                  <div style={{textAlign: "center", fontSize:"20px"}}>Time <h1>00:{this.state.timer}</h1> </div>
-                :
-                <React.Fragment>
-                  <h5 className="card-title" style={{textAlign: "center", fontSize:"20px"}}>Typing Speed</h5>
-                  <CalAccuracy time={this.state.timer} correctCharCount={this.state.correctCharCount}/>
-                </React.Fragment>
-              }
-              
+              <div style={{textAlign: "center", fontSize:"20px"}}>Time <h1>00:{this.state.timer}</h1> </div>
+              <h5 className="card-title" style={{textAlign: "center", fontSize:"20px"}}>Typing Speed</h5>                    
+              <CalAccuracy time={this.state.timer} correctCharCount={this.state.correctCharCount}/>
             </div>
           </div>
 
